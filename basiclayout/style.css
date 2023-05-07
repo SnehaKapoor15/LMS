@@ -1,0 +1,209 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+:root{
+	--bg-color: #ffffff;
+	--text-color: #22100d;
+	--second-color: #685f78;
+	--main-color: #f66962;
+	--big-font: 3.8rem;
+	--h2-font: 2.6rem;
+	--p-font: 1.1rem;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 23px 13%;
+	transition: all .40s ease;
+}
+.logo img{
+	height: auto;
+	width: 160px;
+	max-width: 100%;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: var(--text-color);
+	font-weight: 600;
+	font-size: var(--p-font);
+	padding: 10px 22px;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	color: var(--main-color);
+}
+li ul {display: none;
+        border-left:1px solid;
+	}
+ul li a {display: block;background: #fcf5fc;padding: 5px 10px 5px 10px;text-decoration: none;
+        white-space: nowrap;color: #f49b9b;}
+/* ul li a:hover {background: rgb(248, 244, 241);} */
+li:hover ul {display: block; position: absolute;}
+li:hover li {float: none;}
+li:hover a {background: #f66962;}
+li:hover li a:hover {background: #f29090;} *
+.header-icons{
+	display: flex;
+	align-items: center;
+}
+.header-icons i{
+	margin-left: 10px;
+	font-size: 24px;
+	color: var(--text-color);
+	transition: all .40s ease;
+	margin-right: 15px;
+}
+.header-icons i:hover{
+	transform: scale(1.2);
+	color: var(--main-color);
+}
+#menu-icon{
+	font-size: 34px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section{
+	padding: 80px 13%;
+}
+.home{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: url(background.png);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	align-items: center;
+}
+.home-text h1{
+	font-size: var(--big-font);
+	margin: 15px 0 15px;
+}
+.home-text h6{
+	color: var(--main-color);
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.home-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	margin-bottom: 48px;
+}
+.latter form{
+	width: 100%;
+	max-width: 460px;
+	position: relative;
+}
+.latter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	outline: none;
+	padding: 16px 140px 16px 15px;
+	border: 2px solid var(--main-color);
+	border-radius: 30px;
+}
+.latter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	border: none;
+	outline: none;
+	background: var(--main-color);
+	color: var(--bg-color);
+	padding: 16px 40px;
+	border-radius: 30px;
+	cursor: pointer;
+	top: 2px;
+	right: 1px;
+}
+.home-img img{
+	height: auto;
+	width: 100%;
+}
+
+header.sticky{
+	background: var(--bg-color);
+	padding: 12px 13%;
+	box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+}
+.ani-menu
+{
+   visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-3em);
+    z-index: -1;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s , z-index 0s linear 0.01s;
+    
+}
+.menu:focus .ani-menu,
+.menu:focus-within .ani-menu,
+.menu:hover .ani-menu
+{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s , 0.3s;
+}
+nav a {
+    color: #fff;
+    display: block;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.ani-menu a {
+    width: 70%;
+    padding: 15px 30px;
+    font-family: sans-serif;
+    border-radius: 0.2%;
+}
+.ani-menu a:hover
+{
+    background: #fffefe;
+}
+nav a:hover{
+    background: #f66962;
+}
+nav ul , nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav > ul {
+    background: #f9f7f7;
+    text-align: center;
+}
+nav > ul > li{
+    display: inline-block;
+    border-left: 1px solid;
+}
