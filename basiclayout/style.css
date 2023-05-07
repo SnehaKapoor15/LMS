@@ -54,13 +54,14 @@ header{
 li ul {display: none;
         border-left:1px solid;
 	}
-ul li a {display: block;background: #fcf5fc;padding: 5px 10px 5px 10px;text-decoration: none;
-        white-space: nowrap;color: #f49b9b;}
+ul li a {display: block;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+        white-space: nowrap;
+	color: #f49b9b;}
 /* ul li a:hover {background: rgb(248, 244, 241);} */
 li:hover ul {display: block; position: absolute;}
 li:hover li {float: none;}
-li:hover a {background: #f66962;}
-li:hover li a:hover {background: #f29090;} *
 .header-icons{
 	display: flex;
 	align-items: center;
